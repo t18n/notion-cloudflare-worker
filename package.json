@@ -1,0 +1,21 @@
+{
+  "name": "turbothinh-notion-cloudflare-worker",
+  "version": "1.0.0",
+  "description": "My Notion blog",
+  "author": "Turbo Thinh <me@turbothinh.com>",
+  "scripts": {
+    "build": "webpack",
+    "dev": "NODE_ENV=development npm run build",
+    "format": "prettier --write '**/*.{ts,js,css,json,md}'",
+    "transpile": "tsc --project ./test"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^2.0.0",
+    "prettier": "^2.0.5",
+    "rimraf": "^3.0.2",
+    "ts-loader": "^7.0.5",
+    "typescript": "^3.9.5",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12"
+  }
+}

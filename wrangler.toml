@@ -1,0 +1,7 @@
+name = "turbothinh-notion-cloudflare-worker" # The name of your Worker script
+type = "webpack" # Specifies how wrangler build will build your project
+webpack_config = "webpack.config.js" # The path to a custom webpack configuration file for your worker
+routes = ["https://turbothinh.com/*"] # A list of routes you’d like to use your worker on
+workers_dev = true # If your worker will be deployed to your workers.devOpen
+account_id = "" # Set up in Github action
+zone_id = "" # Set up in Github action
