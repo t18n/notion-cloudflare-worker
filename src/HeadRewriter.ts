@@ -1,4 +1,4 @@
-import { config } from './config';
+import { config } from './config/config';
 
 export class HeadRewriter {
   element(element: any) {
