@@ -1,4 +1,5 @@
-# turbothinh-notion-cloudflare-worker
+# Personal Blog with Notion and CI deploy for CloudFlare Workers
+
 I have been a [Notion](https://notion.so) user for well over a year and really enjoyed it. I have been using it heavily for note taking and interested in turning it to my personal blog, so I don't have to maintain the content separately. While Notion still do not provide support for custom domain, there are some solutions out there like Super, NotionHost, Potion, etc. offering you a solution for a few bucks a month. I've tried only Super but later switch to Fruition due to its flexibility and I can have more control over the code. Please visit [Fruition](https://fruitionsite.com/) first before continue digging to this repo.
 
 This is a CI wrapper for [Fruition](https://fruitionsite.com/) for automatic deployment to CloudFlare. The reason I wanted this is because:

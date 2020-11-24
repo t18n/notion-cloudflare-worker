@@ -1,4 +1,4 @@
-import { config } from './config';
+import { config } from './custom/config';
 
 export function generateSitemap(slugs: string[]) {
   let sitemap = '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">';
@@ -10,7 +10,6 @@ export function generateSitemap(slugs: string[]) {
   sitemap += '</urlset>';
   return sitemap;
 }
-
 
 const corsHeaders = {
   'Access-Control-Allow-Origin': '*',

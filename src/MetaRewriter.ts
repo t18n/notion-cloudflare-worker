@@ -1,4 +1,4 @@
-import { config } from './config/config';
+import { config } from './custom/config';
 
 export class MetaRewriter {
   element(element: any) {

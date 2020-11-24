@@ -1,5 +1,5 @@
-import { prettifySlugs } from './config/slugs';
-import { config } from './config/config';
+import { prettifySlugs } from './custom/slugs';
+import { config } from './custom/config';
 import { generateSitemap, handleOptions } from './utils';
 import { MetaRewriter } from './MetaRewriter';
 import { BodyRewriter } from './BodyRewriter';

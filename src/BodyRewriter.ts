@@ -1,5 +1,5 @@
-import { config } from './config/config';
-import { scripts } from './config/scripts';
+import { config } from './custom/config';
+import { scripts } from './custom/scripts';
 
 export class BodyRewriter {
   prettifySlugs: string[];
