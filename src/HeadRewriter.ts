@@ -24,6 +24,11 @@ export class HeadRewriter {
         div.notion-topbar-mobile > div:nth-child(4) { display: none !important; }
         div.notion-topbar > div > div:nth-child(1n).toggle-mode { display: block !important; }
         div.notion-topbar-mobile > div:nth-child(1n).toggle-mode { display: block !important; }
+        
+        /* Hide Vault */
+        div[data-block-id="335c950a-939b-4e07-97b7-cd90ee36b56e"] {
+          display: none;
+        }
       </style>
     `, {
       html: true
