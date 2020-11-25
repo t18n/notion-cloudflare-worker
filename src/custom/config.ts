@@ -1,6 +1,6 @@
 export const config = {
   domain: 'turbothinh.com',
-  googleFont: 'Inconsolata',
+  bodyFont: 'Josefin Sans',
   pageTitle: 'Turbo Thinh\'s Blog',
   pageDescription: 'Just another blog'
 }
