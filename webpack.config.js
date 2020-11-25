@@ -8,6 +8,7 @@ module.exports = {
     filename: `worker.${mode}.js`,
     path: path.join(__dirname, 'dist'),
   },
+  target: 'node',
   mode,
   resolve: {
     extensions: ['.ts', '.tsx', '.js'],

@@ -112,7 +112,9 @@ export class BodyRewriter {
           arguments[1] = arguments[1].replace('${config.domain}', 'www.notion.so');
           return open.apply(this, [].slice.call(arguments));
         };
-      </script>${scripts}`, {
+      </script>
+      
+      ${scripts}`, {
       html: true
     });
   }
