@@ -5,7 +5,6 @@ I have been a [Notion](https://notion.so) user for well over a year and really e
 This is a CI wrapper for [Fruition](https://fruitionsite.com/) for automatic deployment to CloudFlare. The reason I wanted this is because:
 - Editting flexibility: I want to be able to quickly add a `slug`, run `git push` and have my Worker updated automatically instead of going through CloudFlare dashboard.
 - Code versioning, of course
-- Load CSS from `.css`, same as JS from `.js` file for a better development experience
 
 ![Deploy](https://github.com/turbothinh/turbothinh-notion-cloudflare-worker/workflows/Deploy/badge.svg)
 
