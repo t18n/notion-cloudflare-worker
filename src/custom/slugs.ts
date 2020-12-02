@@ -26,6 +26,10 @@ export const prettifySlugs: Record<string, string> = {
   'dan-ao-cho-anh': 'd652e803cda1464a8e81333f5e1941ee',
   'be-doi': 'b4544681bacb4f4eb7d5c46abb063b37',
   'chuyen-tinh-cay-va-la': 'b6d9b61405c54b74940da5bf4b0bbd35',
+  'nhung-giot-nuoc-mua': 'de11600a7bea44f8919963355b89ce87',
+  'cai-chan-di': '96c09fe7e0574e01b0fd00696a18b0de',
+  'o-que-hay-len-tinh': 'be593b931d3a47cda4f7a8fa15e08d1b',
+  'tet-den-gan': 'a121ef57f8f34e128bb274c8e7b6eff7',
 
   // Tech blogs
   'convert-svg-to-png': '5bda89c1fe65452dacd6924c65a82beb'
