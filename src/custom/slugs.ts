@@ -30,6 +30,15 @@ export const prettifySlugs: Record<string, string> = {
   'cai-chan-di': '96c09fe7e0574e01b0fd00696a18b0de',
   'o-que-hay-len-tinh': 'be593b931d3a47cda4f7a8fa15e08d1b',
   'tet-den-gan': 'a121ef57f8f34e128bb274c8e7b6eff7',
+  'doan-tau': 'fb56289c277c45c095e3c023fd8caa00',
+  'bai-hoc': '78955ecc4c254c3ebb52f43031a89797',
+  'uoc-day-la-dip-co-may': '0fefda87a521458ea81a5727248f24e6',
+  'su-lua-chon': 'fbfb3167331f4b9f963dd293ca5b5685',
+  'trach-em': '490004aa87c14d4fabebac6f67b34940',
+  'uoc-mo': '2d9842d800e24d40be40a21fbd0ce594',
+  'chuyen-hoi-be': 'c3c1c48c2cc746cd9bffbc2fd2e3a1cc',
+  'su-tan-nhan-cua-cuoc-song': '32a0f4fa813c44a6be771cf196ea496f',
+  'chuong-bao-thuc': 'dea3e075b39c475ab5acb63bfc846c90',
 
   // Tech blogs
   'convert-svg-to-png': '5bda89c1fe65452dacd6924c65a82beb'
