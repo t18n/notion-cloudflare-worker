@@ -165,7 +165,7 @@ export class BodyRewriter {
 
         let MutationObserver = window.MutationObserver || window.WebKitMutationObserver || window.MozMutationObserver;
         let body = document.querySelector('body');
-        let observer = new MutationObserver(function (mutations) {
+        let disqusObserver = new MutationObserver(function (mutations) {
             mutations.forEach(function (mutation) {
                 let pageContent = document.querySelector("#notion-app div.notion-page-content")
                 if (pageContent) {
@@ -182,7 +182,7 @@ export class BodyRewriter {
                 })
             });
         });
-        observer.observe(body, { subtree: true, childList: true });   
+        disqusObserver.observe(body, { subtree: true, childList: true });   
       </script>
       <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">.</a></noscript>
       
