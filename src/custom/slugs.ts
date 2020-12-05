@@ -58,6 +58,7 @@ export const prettifySlugs: Record<string, string> = {
   'co-khi-nao': '5ada1c4ea6b445b3b3a23340c8c855e1',
   'chiec-la-kho': '03b90b75ccb14a6e9dc724a4de79410a',
   'diem-muoi': '7af66457baaa40d69e3c3a4aaffd90a8',
+  'mua-la-do': 'd0985e27ee2049b18f8608e6a5b4e390',
 
   // Tech blogs
   'convert-svg-to-png': '5bda89c1fe65452dacd6924c65a82beb'

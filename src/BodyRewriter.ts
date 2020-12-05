@@ -1,6 +1,8 @@
 import { config } from './custom/config';
 import { scripts } from './custom/scripts';
 
+const DISQUS_SHORTNAME = "turbothinh"
+
 export class BodyRewriter {
   prettifySlugs: string[];
 
@@ -113,6 +115,76 @@ export class BodyRewriter {
           return open.apply(this, [].slice.call(arguments));
         };
       </script>
+
+      // Disqus
+      <script>
+        let disqus = document.createElement("div")
+        disqus.id = "disqus_thread"
+        disqus.style.width = "100%"
+        var disqus_config = function () {
+            let pathList = window.location.pathname.split("-")
+            let pageID = pathList[pathList.length - 1]
+            this.page.url = window.location.href;
+            if (/^[\w]{32}$/.test(pageID)) {
+              this.page.identifier = pageID;
+            }else{
+              this.page.identifier = undefined;
+            }
+        };
+        
+        (function () {
+          var d = document, s = d.createElement('script');
+          s.src = 'https://${DISQUS_SHORTNAME}.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+
+        // if you want to hide some element, add the selector to hideEle Array
+        const hideEle = [
+          "#notion-app > div > div.notion-cursor-listener > div > div:nth-child(1) > div.notion-topbar > div > div:nth-child(6)",
+          "#notion-app > div > div.notion-cursor-listener > div > div:nth-child(1) > div.notion-topbar > div > div:nth-child(5)",
+          "#notion-app > div > div.notion-cursor-listener > div > div:nth-child(1) > div.notion-topbar > div > div:nth-child(4)",
+        ]
+
+        // if you want to replace some element, add the selector and innerHTML to replaceEle Object
+        const replaceEle = {
+          "#notion-app > div > div.notion-cursor-listener > div > div:nth-child(1) > div.notion-topbar > div > div:nth-child(6)": "<span>agodrich<span>"
+        }
+
+        function hideElement(qs) {
+          let eles = document.querySelectorAll(qs)
+          eles && eles.forEach(ele => ele.style.display = "none")
+        }
+
+        function replaceElement(qs, _html) {
+          let ele = document.querySelector(qs)
+          if (ele) {
+            ele.innerHTML = _html
+          }
+        }
+
+        let MutationObserver = window.MutationObserver || window.WebKitMutationObserver || window.MozMutationObserver;
+        let body = document.querySelector('body');
+        let observer = new MutationObserver(function (mutations) {
+            mutations.forEach(function (mutation) {
+                let pageContent = document.querySelector("#notion-app div.notion-page-content")
+                if (pageContent) {
+                    if (pageContent.lastChild && pageContent.lastChild.id !== "disqus_thread") {
+                        pageContent.append(disqus)
+                        DISQUS.reset({ reload: true })
+                        console.log(+new Date())
+                    }
+                }
+                hideEle.forEach( hideE => hideElement(hideE) )
+                Object.entries(replaceEle).forEach( item => {
+                  let [qs,_html] = item;
+                  replaceEle(qs,_html)
+                })
+            });
+        });
+        observer.observe(body, { subtree: true, childList: true });   
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">.</a></noscript>
       
       ${scripts}`, {
       html: true
