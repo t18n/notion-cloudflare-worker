@@ -119,6 +119,8 @@ export class BodyRewriter {
       // Disqus
       <script>
         if (window.location.href.includes('/blog')) {
+          console.log('Adding Disqus...');
+          
           let disqus = document.createElement("div")
           disqus.id = "disqus_thread"
           disqus.style.width = "100%"
