@@ -28,6 +28,11 @@ export class HeadRewriter {
       div[data-block-id="335c950a-939b-4e07-97b7-cd90ee36b56e"] {
         display: none;
       }
+
+      /* Disqus */
+      div#disqus_thread {
+        margin-top: 40px;
+      }
     </style>`, { html: true })
   }
 }
