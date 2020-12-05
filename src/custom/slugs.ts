@@ -3,7 +3,7 @@
   */
 export const prettifySlugs: Record<string, string> = {
   // Pages
-  '/': '123c6dcd25474991a03545265c290beb',
+  '': '123c6dcd25474991a03545265c290beb',
   'life': 'fe1790b5eb2843ed803b56a7d90e298d',
   'tech': '7224be26a58a4dcd946781f255b0bd81',
   'quotes': 'ccbdd387723f49c983486cff4935627c',
