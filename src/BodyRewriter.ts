@@ -118,6 +118,7 @@ export class BodyRewriter {
 
       // Disqus
       <script>
+      console.log('Page URL:', window.location.href);
         if (window.location.href.includes('/blog')) {
           console.log('Adding Disqus...');
           
