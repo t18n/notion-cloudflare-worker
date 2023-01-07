@@ -6,8 +6,6 @@ This is a CI wrapper for [Fruition](https://fruitionsite.com/) for automatic dep
 - Editting flexibility: I want to be able to quickly add a `slug`, run `git push` and have my Worker updated automatically instead of going through CloudFlare dashboard.
 - Code versioning, of course
 
-![Deploy](https://github.com/turbothinh/turbothinh-notion-cloudflare-worker/workflows/Deploy/badge.svg)
-
 ## Set up your site
 1. Follow [Fruition](https://fruitionsite.com/) tutorial to set up your Notion `hello-world` site first, once it is running, get back here.
 2. Clone this project
